@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>752397717765-ji190m4a23dmkh0chg8khkjufjrjh7oj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.752397717765-ji190m4a23dmkh0chg8khkjufjrjh7oj</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDIIo1qwrQWYVaPbJahTLgbZ24CkUTvWSg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>752397717765</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cz.muni.fi.movieCatalog</string>
+	<key>PROJECT_ID</key>
+	<string>fluttermoviecatalog</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fluttermoviecatalog.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:752397717765:ios:0eb7e978d2aa657d4d676c</string>
+</dict>
+</plist>

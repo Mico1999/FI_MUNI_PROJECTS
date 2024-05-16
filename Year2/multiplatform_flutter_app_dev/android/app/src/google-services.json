@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "752397717765",
+    "project_id": "fluttermoviecatalog",
+    "storage_bucket": "fluttermoviecatalog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752397717765:android:351887e63abd8c664d676c",
+        "android_client_info": {
+          "package_name": "cz.muni.fi.movie_catalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752397717765-9iuo9u7uqkcffo5nc9lnrm2ltknv4rjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChC7eRYanJNk6XbOF1sESN-16dR6okrgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752397717765-9iuo9u7uqkcffo5nc9lnrm2ltknv4rjo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "752397717765-ji190m4a23dmkh0chg8khkjufjrjh7oj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "cz.muni.fi.movieCatalog"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

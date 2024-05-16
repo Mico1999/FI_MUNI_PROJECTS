@@ -1,0 +1,62 @@
+default:
+  image: "maven:3.8-openjdk-17-slim"
+
+cache:
+  paths:
+    - ".m2/repository"
+
+variables:
+  MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+  MAVEN_CLI_OPTS: "--batch-mode --color always --errors --fail-at-end --show-version"
+
+stages:
+  - style
+  - test
+  - build
+
+style:
+  tags:
+    - shared-fi
+  stage: style
+  script:
+    - ./checkstyle.sh
+  allow_failure: true
+  only:
+    - merge_requests
+  needs: []
+  artifacts:
+    when: always
+    expire_in: 10 minutes
+    reports:
+      junit:
+        - '**/target/checkstyle-result.xml'
+
+test:
+  tags:
+    - shared-fi
+  stage: test
+  script:
+    - ./mvnw clean install $MAVEN_CLI_OPTS
+  only:
+    - merge_requests
+    - main
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - '**/target/surefire-reports/TEST-*.xml'
+        - '**/target/failsafe-reports/TEST-*.xml'
+  needs: []
+
+build:
+  tags:
+    - morty
+  stage: build
+  script:
+    - podman login -u $CI_USERNAME -p $CI_PASSWORD $CI_REPO
+    - podman build -t $CI_REPO/pa165-library-management-system:latest .
+    - podman push $CI_REPO/pa165-library-management-system:latest
+  only:
+    - main
+  needs:
+    - test
