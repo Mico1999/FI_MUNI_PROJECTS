@@ -1,0 +1,9 @@
+                                                                    QUERY PLAN                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=2405.78..2405.79 rows=1 width=8) (actual time=28.468..28.470 rows=1 loops=1)
+   ->  Seq Scan on accounts_partition_1 accounts_partitioned  (cost=0.00..2405.59 rows=76 width=4) (actual time=0.070..25.799 rows=48001 loops=1)
+         Filter: ((aid >= 42000) AND (aid <= 90000))
+         Rows Removed by Filter: 51998
+ Planning Time: 0.320 ms
+ Execution Time: 28.495 ms
+(6 rows)

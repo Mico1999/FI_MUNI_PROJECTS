@@ -19,3 +19,6 @@
 * Multiplatform Flutter aplication development
 * Link for details of subject => https://is.muni.cz/predmet/fi/podzim2023/PV292?lang=en
 -------------------------------------------------------------------------
+* Database System Project
+* Link for details of subject => https://is.muni.cz/auth/course/fi/spring2024/PA036?lang=en
+-------------------------------------------------------------------------

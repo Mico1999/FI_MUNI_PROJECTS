@@ -1,0 +1,12 @@
+                                                                  QUERY PLAN                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate  (cost=8515.59..8515.60 rows=1 width=8) (actual time=22.098..22.100 rows=1 loops=1)
+   ->  Bitmap Heap Scan on pgbench_accounts  (cost=1047.93..8392.78 rows=49123 width=4) (actual time=4.354..13.268 rows=48001 loops=1)
+         Recheck Cond: ((aid >= 42000) AND (aid <= 90000))
+         Heap Blocks: exact=1477
+         ->  Bitmap Index Scan on pgbench_accounts_pkey  (cost=0.00..1035.65 rows=49123 width=0) (actual time=4.126..4.127 rows=48001 loops=1)
+               Index Cond: ((aid >= 42000) AND (aid <= 90000))
+ Planning Time: 0.138 ms
+ Execution Time: 22.172 ms
+(8 rows)
+

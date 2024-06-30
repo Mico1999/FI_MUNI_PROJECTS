@@ -1,0 +1,1 @@
+SELECT aid FROM pgbench_accounts ORDER BY abalance DESC LIMIT 10;
